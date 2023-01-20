@@ -1,3 +1,4 @@
 #!/bin/bash
-gcc -c *.c -fpic
-gcc -shared *.o -o liball.so
+gcc -Wall -Wextra -Werro -pedantic -c -fPIC * .c
+gcc -shared -o libball.so * .o 
+exprot LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
